@@ -1,0 +1,63 @@
+<!--
+FORMATTING:
+• (!line) - new line
+• (!bold/TEXT) - bold text
+• (!underline/TEXT) - underlined text
+• (!italic/text) - italic text
+• (!color/#HEX/TEXT) - colored text
+• (!emoji/EMOJI.png) - emoji
+• (!size/XXpx/TEXT) - text size
+• (!youtube/VIDEO_URL) - youtube video
+• (!button/#HEX/ICON.png/LINK/TEXT) - button
+• (!hr) - horizontal line
+• (!hyperlink/LINK/TEXT) - make a text that open a link after clicking
+• (!img/image.png) - put image inside credits
+• (!gradient/#HEX1/#HEX2/TEXT) - gradient text from left to right
+-->
+
+<credits>
+  <page 
+  noImage="false" 
+  image="mod-credits/01c_owners.png" 
+  title="Owners" 
+  text="(!color/#9E0000/(!bold/Lex | Sovietfudge | Maximal Energy))"/>
+  <page 
+  noImage="false" 
+  image="mod-credits/01c_designers.png" 
+  title="Designers" 
+  text="(!color/#9B59B6/(!bold/Bonbonnet | LeBeaBae | Siren Bread))"/>
+  <page 
+  noImage="false" 
+  image="mod-credits/01c_animators.png" 
+  title="Animators" 
+  text="(!color/#3498DB/(!bold/PichuZapper | Sinetile))"/>
+  <page 
+  noImage="false" 
+  image="mod-credits/01c_composers.png" 
+  title="Composers" 
+  text="(!color/#2ECC71/(!bold/Lex | PichuZapper | Sovietfudge | Maximal Energy))"/>
+  <page 
+  noImage="false" 
+  image="mod-credits/01c_singers.png" 
+  title="Singers" 
+  text="(!color/#F1C40F/(!bold/Lex | Charlie | PichuZapper | CollegeNollegeYT))"/>
+  <page 
+  noImage="false" 
+  image="mod-credits/01c_other.png" 
+  title="Special Thanks" 
+  text="(!bold/To all the legacy members such as, but not limited to, Hadern Hadwards and Cori for their contributions)"/>
+  <page
+  noImage="false"
+  image="mod-credits/02c-remmie@2x.png"
+  title="Special Thanks!"
+  text="Incredibox Modding Build created with passion by (!color/#64b1e8/(!bold/Rem))! Love creative mods and unique sounds? Support her work and explore more on her channel! (!line)(!line)(!hr)(!line) (!button/#8f1e22/social_youtube.png/https://www.youtube.com/@rin.Incredibox//Rem's Channel)"
+  />
+  <page 
+  noImage="false"
+  image="mod-credits/03c-sfsg@2x.png"
+  title="INCREDIBOX BY SO FAR SO GOOD!"
+  text="And of course the official developers of Incredibox, (!bold/Allan), (!bold/Romain) and Incredible (!bold/Polo)! Without them, this project wouldn't exist! (!line)(!line)(!hr)(!line)Buy Official Incredibox for more fun and to support the team!(!line)(!line)(!button/#4A4A4A/sfsg-credits-button.png/https://www.incredibox.com//Incredibox Website)(!button/#4A4A4A/sfsg-credits-button.png/https://www.incredibox.com/info/store/Buy Incredibox)"
+  />
+</credits>
+
+<!--You can edit or change my credits, but please remember to credit me somewhere as well for using my build! Thank you! ✨-->
