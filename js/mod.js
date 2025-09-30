@@ -30,3 +30,107 @@ modInfo = {
 function onLockedIcon() {
   boxDialog.open("locked");
 }
+
+OnDelayIn(500, function(){
+  setAchievement(RegisterMod, "ach_1", "ach_familliar.png", "This Seems Familliar...", "Play Spru-what? for the first time", "normal")
+  setAchievement(RegisterMod, "ach_2", "ach_summon.png", "Very Scary", "Summon Black", "hidden")
+  setAchievement(RegisterMod, "ach_3", "ach_female.png", "Ladies Party", "Play all female characters together", "normal")
+  setAchievement(RegisterMod, "ach_4", "ach_sun.png", "The Sun Beamin'", "Let Mr. Sun play for 15 Loops", "normal")
+  setAchievement(RegisterMod, "ach_5", "ach_mix.png", "Sprunk It Up!", "Mix Spru-what? for 3 minutes", "normal")
+  setAchievement(RegisterMod, "ach_6", "ach_break.png", "I Luv Breakcore", "Use Fun Bot 12 times", "progress", 12)
+  setAchievement(RegisterMod, "ach_7", "ach_credit.png", "Important Info", "You read the credits! You need to know these people, y'know.", "normal")
+});
+
+onV1Start();{
+  unlockAchievement(RegisterMod, "ach_1")
+}
+
+function onV1Polo15() {
+  computerHi = true
+}
+function offV1Polo15() {
+  computerHi = false
+}
+
+function onV1Polo19() {
+  Shake(5, 300)
+  unlockAchievement(RegisterMod, "ach_2")
+  blackFokkenLyricsDAfok = true
+}
+function offV1Polo19() {
+  blackFokkenLyricsDAfok = false
+}
+
+let achFemales1 = false;
+let achFemales2 = false;
+let achFemales3 = false;
+let achFemales4 = false;
+
+function onV1Polo4() {
+	achFemales1 = true;
+  CheckAchievement()
+}
+function offV1Polo4() {
+  achFemales1 = false;
+  CheckAchievement()
+}
+function onV1Polo9() {
+	achFemales2 = true;
+  CheckAchievement()
+}
+function offV1Polo9() {
+  achFemales2 = false;
+  CheckAchievement()
+}
+function onV1Polo16() {
+	achFemales3 = true;
+  CheckAchievement()
+}
+function offV1Polo16() {
+  achFemales3 = false;
+  CheckAchievement()
+}
+function onV1Polo17() {
+	achFemales4 = true;
+  CheckAchievement()
+}
+function offV1Polo17() {
+  achFemales4 = false;
+  CheckAchievement()
+}
+
+function CheckAchievement() {
+  if (achFemales1 && achFemales2 && achFemales3 && achFemales4) {
+    unlockAchievement(RegisterMod, "ach_3")
+  }
+}
+
+let computerHi = false
+let blackFokkenLyricsDAfok = false
+let MrSunLoops = 0,
+  MrSunONMix = !1;
+function onV1Mix() {
+  (SpruWhatMixAchievement = setTimeout(() => {
+    unlockAchievement(RegisterMod, "ach_5");
+  }, 18e4)),
+    onLoop(1, () => {
+      MrSunONMix &&
+        (MrSunLoops++,
+        MrSunLoops >= 15 && unlockAchievement(RegisterMod, "ach_4"));
+    });
+}
+
+function offV1Mix() {
+  clearTimeout(SpruWhatMixAchievement), offLoop(), (MrSunLoops = 0);
+}
+function onV1Polo10() {
+  MrSunONMix = !0;
+}
+function offV1Polo10() {
+  (MrSunLoops = 0), (MrSunONMix = !1);
+}
+function onV1Polo3() {
+  addProgressAchievement(RegisterMod, "ach_6", 1);
+}
+
+// Check examples.js for more functions and triggers!
