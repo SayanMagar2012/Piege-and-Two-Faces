@@ -1,8 +1,6 @@
 // Here all versions are located, the same as app.js but this time its apps.js because all versions info is located in this one file
 // To add more versions, copy the versions.v1 and replace with versions.v2, and the same with others (it support more than 9 versions)
 
-// To learn how to use it correctly, visit https://incredirem.com/rmb
-
 versions.v1 = {
   name: "Piège",
   version: "v1",
