@@ -128,7 +128,8 @@ versions.v1 = {
       uniqsnd: !1,
     },
   ],
-  bonusarray: [],
+  bonusarray: [
+ ],
 };
 
 versions.v2 = {
@@ -258,5 +259,6 @@ versions.v2 = {
       uniqsnd: !1,
     },
   ],
-  bonusarray: [],
+  bonusarray: [
+ ],
 };
