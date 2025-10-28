@@ -22,13 +22,9 @@ var RegisterMod = "Piège & Two Faces";
 var RegisterModVersion = "1.2.0";
 var ModDeveloper = "Flow Studio";
 
-modInfo = {
-  description: "You can edit mod description and details inside js/mod.js", // Some description about your mod, not too long
-  relatedVideo: "", // YouTube video link of a teaser or release (or just anything about mod) - you can also leave it empty
-};
-
-function onLockedIcon() {
-  boxDialog.open("locked");
+// Simple function for locked icons!
+function onLockedIcon(){
+  boxDialog.open('This Icon is locked', 'LOCKED!')
 }
 
 OnDelayIn(500, function(){
