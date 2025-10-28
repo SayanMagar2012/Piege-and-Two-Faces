@@ -28,13 +28,6 @@ function onLockedIcon(){
 }
 
 OnDelayIn(500, function(){
-  setAchievement(RegisterMod, "ach_1", "ach_familliar.png", "This Seems Familliar...", "Play Spru-what? for the first time", "normal")
-  setAchievement(RegisterMod, "ach_2", "ach_summon.png", "Very Scary", "Summon Black", "hidden")
-  setAchievement(RegisterMod, "ach_3", "ach_female.png", "Ladies Party", "Play all female characters together", "normal")
-  setAchievement(RegisterMod, "ach_4", "ach_sun.png", "The Sun Beamin'", "Let Mr. Sun play for 15 Loops", "normal")
-  setAchievement(RegisterMod, "ach_5", "ach_mix.png", "Sprunk It Up!", "Mix Spru-what? for 3 minutes", "normal")
-  setAchievement(RegisterMod, "ach_6", "ach_break.png", "I Luv Breakcore", "Use Fun Bot 12 times", "progress", 12)
-  setAchievement(RegisterMod, "ach_7", "ach_credit.png", "Important Info", "You read the credits! You need to know these people, y'know.", "normal")
 });
 
 onV1Start();{
@@ -130,3 +123,4 @@ function onV1Polo3() {
 }
 
 // Check examples.js for more functions and triggers!
+
